@@ -1,0 +1,18 @@
+<nav [class.navbar-change]="navbarStatus" >
+    <div>
+        <span class="logo-1" >PIOTR </span><span class="logo-2">KOCHANOWSKI</span>
+    </div>
+    
+    <div class="hamburger-container" (click)="hamburgerStatus = !hamburgerStatus" [ngClass]="hamburgerStatus ? 'active' : 'notactive'">
+        <div class="ham-1"></div>
+        <div class="ham-2"></div>
+        <div class="ham-3"></div>
+    </div>
+
+    <ul [ngClass]="hamburgerStatus ? 'active-menu' : 'notactive'">
+            <li routerLinkActive= "test" (click) ="scrollToMiddle('home')">HOME</li>
+            <li (click)="scrollToMiddle('about')">ABOUT</li>
+            <li (click)="scrollTo('projects')">PROJECTS</li>
+            <li (click)="scrollToMiddle('contact')">CONTACT</li>
+    </ul>
+</nav>

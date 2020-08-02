@@ -1,0 +1,14 @@
+<div class="contact-container">
+    <p *ngIf="submit" class="form-container">Thanks for the message, i will try to answer as fast as i can.</p>
+        <form ngForm class="form-container" #emailForm = "ngForm" (ngSubmit)="onSubmit(emailForm.value)" *ngIf="!submit">
+            <div class="contact-info">Contact Me</div>
+            <input type = "email" email required id="email" name="email" placeholder="Your Email" [(ngModel)]="model.address" #email="ngModel">
+            <div *ngIf ="email.errors?.required && email.touched" class="form-validation">Please provide your email address</div>
+            <div *ngIf ="email.errors?.email && email.invalid" class="form-validation">Address is invalid</div>
+            <input type="text" required maxlength="64" id="topic" name="topic" placeholder="Topic" [(ngModel)]="model.topic" #topic="ngModel">
+            <div *ngIf ="topic.errors?.required && topic.touched" class="form-validation" >Please provide the topic</div>
+            <textarea type="text" required id="message" name="message" placeholder="Message" [(ngModel)]="model.message" #message="ngModel"></textarea>
+            <div *ngIf ="message.errors?.required && message.touched" class="form-validation">Please provide the message</div>
+        <button type="submit" [disabled]="!emailForm.form.valid" >Send</button>
+        </form>
+</div>

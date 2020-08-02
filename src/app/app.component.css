@@ -1,0 +1,24 @@
+*{
+    background-color:white;
+}
+.app-container{
+    padding: 10%;
+    display:grid;
+    align-content: center;
+    grid-template-columns: 100%;
+    
+}
+
+footer{
+    display:flex;
+    color: rgb(141, 141, 141);
+    padding-bottom:10px;
+    justify-content: center;
+}
+
+@media (max-width: 600px)
+{
+footer{
+    font-size: 13px;
+}
+}

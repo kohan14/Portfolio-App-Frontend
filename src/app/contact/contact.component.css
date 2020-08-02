@@ -1,0 +1,101 @@
+.contact-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10% 10%;
+    color: rgb(170, 170, 170);
+}
+
+.form-container {
+    background-color:#ffffff;
+    display:flex;
+    width: 700px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid rgb(211, 211, 211);
+    padding:20px;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 57px -32px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 57px -32px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.15);
+}
+input[type="text"], input[type="email"], textarea {
+    box-sizing: border-box;
+    padding: 0 30px;  
+    border: 1px solid rgb(231, 231, 231);
+}
+input, textarea{
+    font-size: 1.2rem;
+    height: 3rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    resize: none;
+}
+
+input:focus{
+    background-color: rgb(241, 241, 241);
+}
+button{
+    cursor: pointer;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    border:none;
+    margin: 10px auto;
+    background-color: rgb(199, 199, 199);
+    color: white; 
+    outline:none;
+    transition: all 200ms ease-in-out;
+}
+button:hover{
+    background-color: rgb(149, 149, 149);
+}
+button:active{
+    background-color: rgb(87, 87, 87);
+}
+button:disabled{
+    background-color:rgba(88, 88, 88, 0);
+    transform: translate(0,30%);
+    color:rgba(190, 190, 190, 0.0); 
+}
+textarea{
+    height: 250px;
+    padding:20px;
+}
+.form-validation{
+    color: white;
+    margin-right:auto;
+    margin-left: 15px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(187, 99, 99);
+
+}
+
+.contact-info{
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom:10px;
+
+}
+@media (max-width: 550px){
+    input, textarea{
+        font-size: 0.8rem;
+        height: 2rem;
+    }
+    textarea{
+        height: 250px;
+        padding:20px;
+    }
+    .form-validation{
+        font-size: 0.8rem;
+
+    }
+    .contact-info{
+        font-size: 1.5rem;
+    }
+}

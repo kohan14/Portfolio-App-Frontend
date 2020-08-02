@@ -1,0 +1,10 @@
+<div class="projects-container">
+    <div href="#" class="project-grid" [ngClass]="projectListCheck() ? 'notactive' : 'active'" >
+        <section class="box" *ngFor='let project of projectList'>
+            <div class="details">{{project.ProjectName}}<span>|</span><span>{{project.ProjectDate}}</span><span>|</span><span>{{project.ProjectTechnologies}}</span></div>
+            <div class="description">{{project.ProjectDescription}}</div>
+            <button class="box-button">Enter</button>
+            <img src="../../assets/Project_first.png">
+        </section>
+    </div>
+</div>

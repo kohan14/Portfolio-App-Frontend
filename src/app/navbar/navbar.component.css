@@ -1,0 +1,148 @@
+
+a:active {
+    color: black;
+  }
+
+.logo-1 {
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-weight: 500;
+}
+.logo-2 {
+    font-weight:900;
+}
+.test {
+    background-color: red;
+}
+ul {
+    padding-inline-start: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+    transform: translate(150%);
+    animation-name: nav-ul-slidein;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+nav {
+    z-index:999;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    width: 98.5%;
+    padding: 1.5rem 1rem;
+    background-color: rgb(207, 206, 218, 0.8);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.46);
+    transition: 150ms all ease-in-out;
+    display: flex;
+    position: fixed;
+
+}
+.navbar-change{
+    padding: 0.7rem 1rem;
+}
+ul li {
+    cursor: pointer;
+    margin: 0px 10px;
+    text-align: center;
+    transition: 150ms all ease-in;
+}
+
+li:hover {
+    letter-spacing: 2px;
+}
+.hamburger-container{
+    display:none;
+    cursor:pointer;
+    margin-right: 25px;
+    margin-left:auto;
+
+}
+.ham-1, .ham-2, .ham-3 {
+    width:20px;
+    height:2px;
+    background-color:black;
+    margin:4px 0;
+    transition: 0.2s all ease-in;
+}
+.active .ham-2 {
+    opacity: 0;
+}  
+.active .ham-1 {
+    -webkit-transform: rotate(-45deg) translate(0px, -8px) ;
+    transform: rotate(-45deg)translate(0px, 8px);
+  }
+.active .ham-3 {
+    -webkit-transform: rotate(45deg) translate(0px, -8px) ;
+    transform: rotate(45deg) translate(0px, -8px)
+  }
+
+@keyframes nav-ul-slidein {
+0%{
+
+}
+
+100%{
+    transform: translate(0);
+}
+}
+@media (max-width: 1000px){
+nav 
+{
+    padding: 1rem;
+}
+ul {
+    animation-delay: 100ms;
+    animation-duration: 400ms;
+}
+}
+
+@media (max-width: 720px){
+.logo-1{
+    padding-left:5px;
+}
+nav{
+    padding: 0.7rem 0.3rem;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+.hamburger-container{
+    display:inline-block;
+    margin-right: 25px;
+    margin-left:auto;
+}
+ul {
+    padding-inline-start: 0em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-top: 10px;
+    list-style-type: none;
+    display: none;
+    grid-column:1 / span 2;
+}
+ul li {
+    line-height: 40px;
+    box-sizing: border-box;
+}
+a:hover {
+    letter-spacing: 0;
+}
+ul li:hover {
+    background-color: rgba(160, 160, 160, 0.3);
+    border-radius: 5px;
+}
+.navbar-change{
+    padding: 0.7rem 0.3rem;
+}
+.active-menu {
+    display: block;
+    width:100%;
+
+}
+}
