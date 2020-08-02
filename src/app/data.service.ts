@@ -10,8 +10,8 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  private api = "https://localhost:5001/api/emaildata";
-  private downloadApi = "https://localhost:5001/api/download"
+  private api = "https://pk-portfolio-backend.herokuapp.com/api/emaildata";
+  private downloadApi = "https://pk-portfolio-backend.herokuapp.com/api/download"
 
   public postEmailForm(emaildata : any) {
     return this.http.post(this.api, emaildata, {responseType: "json"})
