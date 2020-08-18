@@ -116,6 +116,7 @@
 }
 @media (max-width: 720px){
     .project-grid{
+        display: grid;
         grid-template-columns: repeat(1, 360px);
         grid-row-gap: 90px;
     }
