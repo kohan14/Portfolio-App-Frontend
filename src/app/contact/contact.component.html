@@ -1,6 +1,6 @@
 <div class="contact-container">
     <div class="form-container">
-        <div class="col-1">
+        <div class="col-1" *ngIf="!submit">
             <div class="contact-info-box">
                 <div class="icon">
                     <i class="fa fa-map-marker"></i>
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div *ngIf="submit">Thanks for the message, i will try to answer as fast as i can.</div>
+        <div class="submit-message"*ngIf="submit">Thanks for the message, i will try to answer as fast as i can.</div>
         <form data-aos="fade-up" ngForm class="col-2" #emailForm = "ngForm" (ngSubmit)="onSubmit(emailForm.value)" *ngIf="!submit">
             <div class="contact-info">Contact Me</div>
             <input type = "email" email required id="email" name="email" placeholder="Your Email" [(ngModel)]="model.address" #email="ngModel">

@@ -10,7 +10,7 @@
     </div>
 
     <ul [ngClass]="hamburgerStatus ? 'active-menu' : 'notactive'">
-            <li routerLinkActive= "test" (click) ="scrollToMiddle('home')">HOME</li>
+            <li (click) ="scrollToMiddle('home')">HOME</li>
             <li (click)="scrollToMiddle('about')">ABOUT</li>
             <li (click)="scrollTo('projects')">PROJECTS</li>
             <li (click)="scrollToMiddle('contact')">CONTACT</li>

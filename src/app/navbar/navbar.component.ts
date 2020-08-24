@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-
+import { smoothscroll} from 'smoothscroll-polyfill';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   hamburgerStatus: boolean = false;
   navbarStatus: boolean = false;
   ngOnInit(): void {
+    smoothscroll.polyfill();
   }  
   @HostListener("document: scroll")
   scrollFunction(){
@@ -27,7 +28,6 @@ export class NavbarComponent implements OnInit {
   }
   scrollTo(destination: string){
     let viewport = window.innerWidth;
-    console.log(viewport)
     if(viewport < 720)
       {
         document.getElementById(destination).scrollIntoView({behavior:"smooth", block: "start", inline: "nearest"});
