@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "aos": "^2.3.4",
     "file-saver": "^2.0.2",
     "rxjs": "~6.5.4",
