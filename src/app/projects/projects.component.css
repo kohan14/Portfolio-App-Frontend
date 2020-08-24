@@ -22,8 +22,6 @@
 .box{
     cursor: pointer;
     position:relative;
-    display:flex;
-    justify-content: space-between;
     -webkit-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
@@ -42,8 +40,6 @@
 }
 .box .details{
     position: absolute;
-    display:flex;
-    justify-content: space-evenly;
     opacity: 0;
     cursor: pointer;
     color:rgba(255, 255, 255, 0.7);
@@ -99,8 +95,12 @@
     bottom:30%;
     opacity:1;
 }
-.box img { 
-    max-width: 100%;
+img { 
+    max-width:100%;
+    max-height:100%;
+}
+.project-image{
+    display:flex;
 }
 
 @media (max-width: 1100px){

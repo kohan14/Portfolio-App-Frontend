@@ -1,14 +1,45 @@
 <div class="contact-container">
-    <p *ngIf="submit" class="form-container">Thanks for the message, i will try to answer as fast as i can.</p>
-        <form data-aos="fade-up" ngForm class="form-container" #emailForm = "ngForm" (ngSubmit)="onSubmit(emailForm.value)" *ngIf="!submit">
+    <div class="form-container">
+        <div class="col-1">
+            <div class="contact-info-box">
+                <div class="icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text-field">
+                    <h3>Adress</h3>
+                    Pilsudskiego 5/6, 55-011 Siechnice
+                </div>
+            </div>
+            <div class="contact-info-box">
+                <div class="icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="text-field">
+                    <h3>Phone</h3>
+                    +48 732 820 649
+                </div>
+            </div>
+            <div class="contact-info-box">
+                <div class="icon">
+                    <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="text-field">
+                    <h3>Email</h3>
+                    Pilsudskiego 5/6 itp
+                </div>
+            </div>
+        </div>
+        <div *ngIf="submit">Thanks for the message, i will try to answer as fast as i can.</div>
+        <form data-aos="fade-up" ngForm class="col-2" #emailForm = "ngForm" (ngSubmit)="onSubmit(emailForm.value)" *ngIf="!submit">
             <div class="contact-info">Contact Me</div>
             <input type = "email" email required id="email" name="email" placeholder="Your Email" [(ngModel)]="model.address" #email="ngModel">
-            <div *ngIf ="email.errors?.required && email.touched" class="form-validation">Please provide your email address</div>
-            <div *ngIf ="email.errors?.email && email.invalid" class="form-validation">Address is invalid</div>
+                <div *ngIf ="email.errors?.required && email.touched" class="form-validation">Please provide your email address</div>
+                <div *ngIf ="email.errors?.email && email.invalid" class="form-validation">Address is invalid</div>
             <input type="text" required maxlength="64" id="topic" name="topic" placeholder="Topic" [(ngModel)]="model.topic" #topic="ngModel">
-            <div *ngIf ="topic.errors?.required && topic.touched" class="form-validation" >Please provide the topic</div>
+                <div *ngIf ="topic.errors?.required && topic.touched" class="form-validation" >Please provide the topic</div>
             <textarea type="text" required id="message" name="message" placeholder="Message" [(ngModel)]="model.message" #message="ngModel"></textarea>
-            <div *ngIf ="message.errors?.required && message.touched" class="form-validation">Please provide the message</div>
-        <button type="submit" [disabled]="!emailForm.form.valid" >Send</button>
+                <div *ngIf ="message.errors?.required && message.touched" class="form-validation">Please provide the message</div>
+            <button type="submit" [disabled]="!emailForm.form.valid" >Send</button>
         </form>
+    </div>
 </div>
