@@ -8,28 +8,28 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   projectList:any[] = [ {
-    "ProjectName" : "BLANK",
-    "ProjectDate" : "99/55/2020",
-    "ProjectTechnologies" : "Angular10, ASP.NET",
-    "ProjectDescription" : "This project is about blahbl ahb lahbla hblah bla hblahb lahb lahbla hblahbl ahbla sdads  sda dsad  sda d sd as d ss d d d a s   s   sssda"
+    "ProjectName" : "NAME",
+    "ProjectDate" : "DATE",
+    "ProjectTechnologies" : "TECHNOLOGIES",
+    "ProjectDescription" : "Soon there will be more projects."
   },
   {
-    "ProjectName" : "BLANK",
-    "ProjectDate" : "99/55/2020",
-    "ProjectTechnologies" : "Angular10, ASP.NET",
-    "ProjectDescription" : "This project is about blahblahblahblahblah"
+    "ProjectName" : "NAME",
+    "ProjectDate" : "DATE",
+    "ProjectTechnologies" : "TECHNOLOGIES",
+    "ProjectDescription" : "Soon there will be more projects."
   },
   {
-    "ProjectName" : "BLANK",
-    "ProjectDate" : "99/55/2020",
-    "ProjectTechnologies" : "Angular10, ASP.NET",
-    "ProjectDescription" : "This project is about blahblahblahblahblah"
+    "ProjectName" : "NAME",
+    "ProjectDate" : "DATE",
+    "ProjectTechnologies" : "TECHNOLOGIES",
+    "ProjectDescription" : "Soon there will be more projects."
   },
   {
-    "ProjectName" : "BLANK",
-    "ProjectDate" : "99/55/2020",
-    "ProjectTechnologies" : "Angular10, ASP.NET",
-    "ProjectDescription" : "This project is about blahblahblahblahblah"
+    "ProjectName" : "NAME",
+    "ProjectDate" : "DATE",
+    "ProjectTechnologies" : "TECHNOLOGIES",
+    "ProjectDescription" : "Soon there will be more projects."
   }
 ]
   constructor() {

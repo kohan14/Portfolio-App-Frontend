@@ -12,7 +12,7 @@ h3{
     display:flex;
     justify-content: stretch;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 20% 10%;
     color: rgb(170, 170, 170);
 }
@@ -43,6 +43,7 @@ h3{
 .col-1{
     display:flex;
     flex-direction: column;
+    margin-right:30px;
     justify-content: center;
 }
 .col-2{
@@ -126,17 +127,25 @@ textarea{
         order:0;
         margin-bottom:20px;
     }
+    .contact-info{
+        margin:0 auto;
+        margin-bottom: 1rem;
+    }
 }
 @media (max-width: 550px){
     input, textarea{
         font-size: 0.8rem;
         height: 2rem;
     }
+    .text-field{
+        margin-bottom: 1rem;
+
+    }
     textarea{
-        height: 250px;
+        height: 200px;
         padding:20px;
     }
-    .form-validation{
+    .form-validation, .text-field{
         font-size: 0.8rem;
 
     }
@@ -146,4 +155,11 @@ textarea{
     .form-container {
         padding:20px;
     }
+    .contact-container{
+        margin: 0 11%;
+    }
+    button{
+    width: 250px;
+    }
+
 }
