@@ -5,6 +5,9 @@ This was my first attempt to Angular. Code is a total mess (especially css/compo
 * Sending form content via http post request and then forwarding the content as email message with ASP.NET Core Web Api SMTP Client.
 * Simple download file stream from backend server to user via http get request
 
+I've learned much about responsive design and DRY principles (i've seen how messy my code became when i've continuously repeated myself mainly with css), 
+and overall Angular app structure.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
