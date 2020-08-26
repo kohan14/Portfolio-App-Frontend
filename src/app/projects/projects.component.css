@@ -159,7 +159,7 @@ img {
     .box .description{
         font-size: 0.7rem;
     }
-    .box .box-button-1{
+    .box .box-button-1,.box .box-button-2{
         font-size: 0.8rem;
     }
     .box .details{

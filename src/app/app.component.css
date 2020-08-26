@@ -16,7 +16,7 @@
     justify-content: space-evenly;
     align-content: center;
     z-index: 999;
-    bottom: 10px;
+    bottom: 20px;
     left:10px;
 }
 a:link, a:visited, a:hover, a:active {
@@ -39,7 +39,7 @@ footer{
 @media (max-width: 700px)
 {
     .widget-container{
-        bottom: 20px;
+        bottom: 30px;
         left:2px;
     }
     .ic-size{
