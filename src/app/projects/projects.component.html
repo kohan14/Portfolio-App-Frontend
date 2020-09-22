@@ -1,10 +1,31 @@
 <div class="projects-container">
-    <div href="#" class="project-grid" [ngClass]="projectListCheck() ? 'notactive' : 'active'" >
-            <section class="box" *ngFor='let project of projectList'>
-            <div class="details">{{project.ProjectName}}<span> | </span><span>{{project.ProjectDate}}</span><span> | </span><span>{{project.ProjectTechnologies}}</span></div>
-            <div class="description">{{project.ProjectDescription}}</div>
-            <button class="box-button-1">Live</button>
-            <button class="box-button-2">Code</button>
+    <div href="#" class="project-grid">
+        <section class="box">
+            <div class="details">TODOAPP<span> // </span>18.09.2020<span></span><span> // </span>VANILLA JS<span></span></div>
+            <div class="description">ToDoApp with progress bar feature for each task, to keep track of the ones that have to be done. Pure vanilla Js project to learn about LocalStorage. </div>
+            <a class="box-button-1" href="https://gifted-hodgkin-e11af2.netlify.app">Live</a>
+            <a class="box-button-2" href="https://github.com/kohan14/ToDoApp">Code</a>
+            <img class="project-image"src="../../assets/todo.jpg">
+        </section>
+        <section class="box">
+            <div class="details">NAME<span> // </span>DATE<span></span><span> // </span>TECHNOLOGIES<span></span></div>
+            <div class="description">Soon there will be more projects.</div>
+            <a class="box-button-1">Live</a>
+            <a class="box-button-2" href="">Code</a>
+            <img class="project-image"src="../../assets/progress.png">
+        </section>
+        <section class="box">
+            <div class="details">NAME<span> // </span>DATE<span></span><span> // </span>TECHNOLOGIES<span></span></div>
+            <div class="description">Soon there will be more projects.</div>
+            <a class="box-button-1">Live</a>
+            <a class="box-button-2" href="">Code</a>
+            <img class="project-image"src="../../assets/progress.png">
+        </section>
+        <section class="box">
+            <div class="details">NAME<span> // </span>DATE<span></span><span> // </span>TECHNOLOGIES<span></span></div>
+            <div class="description">Soon there will be more projects.</div>
+            <a class="box-button-1">Live</a>
+            <a class="box-button-2" href="https://github.com/kohan14/ToDoApp">Code</a>
             <img class="project-image"src="../../assets/progress.png">
         </section>
     </div>

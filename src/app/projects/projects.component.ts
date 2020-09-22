@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-
+//"../../assets/progress.png"
   projectList:any[] = [ {
     "ProjectName" : "NAME",
     "ProjectDate" : "DATE",
