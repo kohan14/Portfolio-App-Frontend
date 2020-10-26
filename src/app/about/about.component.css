@@ -82,6 +82,7 @@ img {
   width: 35px;
 }
 .about-container{
+    margin-top:1rem;
     display:grid;
     box-sizing: border-box;
     grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
